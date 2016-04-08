@@ -1,0 +1,48 @@
+.btn-default {
+  color: inherit;
+  background: rgba(255,255,255,0);
+  border: 1px solid #e7eaec;
+}
+
+.nav .nav-title{
+	color: #a7b1c2;
+	background: #293B4C;
+	padding: 5px 25px;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.nav hr{
+	border-color: rgba(255,255,255,0.05);
+	margin: 0;
+	padding: 0;
+}
+
+.title-icon, .title-icon-desc{
+	color: rgba(255,255,255,0.4);
+	font-size: 30px;
+}
+
+.body-internal{
+	background: #222;
+}
+.navbar-internal .nav-header{
+	background: #111;
+}
+.item-with-border tr{
+	width: 100%;
+	border-bottom: 1px solid #EEE;
+}
+.item-with-border tr:last-child{
+	border: 0;
+}
+
+.input-sm{
+	width: auto !important;
+	min-width: 150px;
+}
+
+.input-xs{
+	width: 60px;
+	margin-right: 10px;
+}
