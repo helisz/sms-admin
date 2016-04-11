@@ -3,7 +3,13 @@
   background: rgba(255,255,255,0);
   border: 1px solid #e7eaec;
 }
-
+.circle-block{
+    margin: 20px 0;
+}
+.circle-block img{
+    width: 100px;
+    height: auto;
+}
 .nav .nav-title{
 	color: #a7b1c2;
 	background: #293B4C;
