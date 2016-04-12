@@ -2,7 +2,7 @@
  *   INSPINIA - Responsive Admin Theme
  *   Copyright 2014 Webapplayers.com
  */
-@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amplang=en");
+@import url("https://fonts.googleapis.com/css?family=Roboto:200,300,600");
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100; }
 
@@ -40,7 +40,7 @@ h3, h4, h5 {
   color: white; }
 
 .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus {
-  background-color: #293846;
+  background-color: #28324c;
   color: white; }
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
@@ -57,7 +57,7 @@ h3, h4, h5 {
 
 .navbar-default {
   background-color: transparent;
-  border-color: #2f4050; }
+  border-color: #2d3956; }
 
 .navbar-top-links li {
   display: inline-block; }
@@ -149,7 +149,7 @@ h3, h4, h5 {
 
 .nav > li.active {
   border-left: 4px solid #19aa8d;
-  background: #293846; }
+  background: #28324c; }
 
 .nav.nav-second-level > li.active {
   border: none; }
@@ -240,7 +240,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
   position: absolute;
   left: 70px;
   top: 0px;
-  background-color: #2f4050;
+  background-color: #2d3956;
   padding: 10px 10px 10px 10px;
   font-size: 12px; }
 
@@ -2406,7 +2406,7 @@ a.forum-item-title:hover {
   padding-right: 20px !important; }
 
 body {
-  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #2f4050;
   font-size: 13px;
   color: #676a6c;
@@ -4582,10 +4582,18 @@ body.skin-3 {
   .nav.navbar-top-links li.dropdown {
     display: none; } }
 
-/* Only demo */
-@media (max-width: 1000px) {
-  .welcome-message {
-    display: none; } }
+/*** NAVBAR ***/
+.navbar {
+  background: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; }
+
+#page-wrapper {
+  margin-top: 60px; }
 
 .btn-default {
   color: inherit;
@@ -4598,6 +4606,9 @@ body.skin-3 {
 .circle-block img {
   width: 100px;
   height: auto; }
+
+.circles-text {
+  font-weight: 300; }
 
 .nav .nav-title {
   color: #a7b1c2;

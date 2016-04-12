@@ -1,11 +1,16 @@
-/* Only demo */
-@media (max-width: 1000px) {
-  .welcome-message {
-    display: none;
-  }
+/*** NAVBAR ***/
+.navbar{
+    background: white;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
-
-
+#page-wrapper{
+    margin-top: 60px;
+}
 .btn-default {
   color: inherit;
   background: rgba(255,255,255,0);
@@ -17,6 +22,9 @@
 .circle-block img{
     width: 100px;
     height: auto;
+}
+.circles-text{
+    font-weight: 300;
 }
 .nav .nav-title{
 	color: #a7b1c2;
