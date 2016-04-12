@@ -2,7 +2,8 @@
 $font-stack: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Basic Colors
-$navy: #1ab394;           // Primary color
+$navy: #2D3956;           // Primary color
+$navy-light: #4B5879;           // Primary color
 $dark-gray: #c2c2c2;      // Default color
 $blue: #1c84c6;           // Success color
 $lazur: #23c6c8;          // Info color
@@ -11,7 +12,7 @@ $red: #ed5565;            // Danger color
 
 // Various colors
 $text-color: #676a6c;           // Body text
-$gray: #f3f3f4;                 // Background wrapper color
+$gray: #FFF; //#F8F8F9;                 // Background wrapper color
 $light-gray: #d1dade;           // Default label, badget
 $label-badget-color: #5e5e5e;
 
@@ -31,6 +32,6 @@ $boxed-backgound: url("patterns/shattered.png");
 $btn-border-radius: 3px;
 
 //Navigation
-$nav-bg: #2d3956;//#2f4050;
+$nav-bg: #2f4050;//#2f4050;
 $nav-profil-pattern: url("patterns/header-profile.png") no-repeat;
-$nav-text-color: #a7b1c2;
+$nav-text-color: #676a6c; //#a7b1c2;
