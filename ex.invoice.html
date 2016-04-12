@@ -1,318 +1,344 @@
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
     <head>
 
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    	<title>Invoice</title>
+        <title>Invoice</title>
 
-    	<link href="css/bootstrap.min.css" rel="stylesheet">
-    	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    	<link href="css/plugins/iCheck/custom.css" rel="stylesheet">
-    	<link href="css/animate.css" rel="stylesheet">
-    	<link href="css/style.css" rel="stylesheet">
-    	<link href="css/product.css" rel="stylesheet">
-    	<link href="css/custom.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+        <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/product.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
 
     </head>
 
     <body>
 
-    	<div id="wrapper">
-    		<!-- TOPNAV -->
-    		<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-    			<div class="navbar-header">
+        <div id="wrapper">
+            <!-- TOPNAV -->
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
                     <h4 class="nav pull-left" style="margin:0 0 0 10px">
                         <img src="img/logo.png" alt="SMS Portal">
                     </h4>
                 </div>
-    			<ul class="nav navbar-top-links navbar-right">
-    				<li class="dropdown cart-dropdown" id="cart-empty">
-    					<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
-    						<i class="fa fa-shopping-cart"></i>
-    					</a>
-    					<ul class="dropdown-menu dropdown-messages">
-    						<li>
-    							<div class="dropdown-messages-box">
-    								<div class="text-center">
-    									Your cart is empty
-    								</div>
-    							</div>
-    						</li>
-    					</ul>
-    				</li>
-    				
-    				<li>
-    					<a href="#">
-    						<i class="fa fa-sign-out"></i>Log out
-    					</a>
-    				</li>
-    			</ul>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li class="dropdown cart-dropdown" id="cart-empty">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <div class="text-center">
+                                        Your cart is empty
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
 
-    		</nav>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sign-out"></i>Log out
+                        </a>
+                    </li>
+                </ul>
 
-    		
-    		<nav class="navbar-default navbar-static-side" role="navigation">
-    			<div class="sidebar-collapse">
-    				<ul class="nav" id="side-menu">
-    					<li class="nav-header">
-    						<div class="dropdown profile-element"> 
-    							<span>
-    								<img alt="image" class="img-circle" src="img/profile_small.jpg" />
-    							</span>
-    							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-    								<span class="clear">
-    									<span class="block m-t-xs"> <strong class="font-bold">Chris He</strong>
-    									</span>
-    								</span>
-    							</a>
-    							<ul class="dropdown-menu animated fadeInRight m-t-xs">
-    								<li><a href="profile.html">Profile</a></li>
-    								<li><a href="contacts.html">Contacts</a></li>
-    								<li><a href="mailbox.html">Mailbox</a></li>
-    								<li class="divider"></li>
-    								<li><a href="login.html">Logout</a></li>
-    							</ul>
-    						</div>
-    						<div class="logo-element">
-    							IN+
-    						</div>
-    					</li>
-    					<li>
-    						<a href="ex.dashboard.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboard</span></a>
-    					</li>
-                        <li>
-                            <a href="ex.sub.html"><i class="fa fa-diamond"></i> <span class="nav-label">Subscription</span></a>
+            </nav>
+
+
+            <nav class="navbar-default navbar-static-side" role="navigation">
+                <div class="sidebar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="nav-header">
+                            <div class="dropdown profile-element"> 
+                                <span>
+                                    <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                                </span>
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                    <span class="clear">
+                                        <span class="block m-t-xs"> <strong class="font-bold">Chris He</strong>
+                                        </span>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <li><a href="contacts.html">Contacts</a></li>
+                                    <li><a href="mailbox.html">Mailbox</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="login.html">Logout</a></li>
+                                </ul>
+                            </div>
+                            <div class="logo-element">
+                                IN+
+                            </div>
                         </li>
-    					<li>
-    						<a href="ex.traffic.html"><i class="fa fa-bar-chart-o"></i><span class="nav-label">Traffic Report</span></a>
-    					</li>
-    					<li>
-    						<a href="ex.message.html"><i class="fa fa-envelope"></i><span class="nav-label">Message Box</span></a>
-    					</li>
-    					<li>
-    						<a href="ex.invoice.html"><i class="fa fa-paypal"></i> <span class="nav-label">Invoice &amp; Payments</span></a>
-    					</li>
-    					<li>
-    						<a href="ex.info.html"><i class="fa fa-user"></i> <span class="nav-label">Profile</span></a>
-    					</li>
-    				</ul>
-    			</div>
-    		</nav>
-
-
-    		<div id="page-wrapper" class="gray-bg clearfix">
-    			<div class="row wrapper border-bottom white-bg page-heading">
-    				<div class="col-lg-10">
-    					<h2>Invoice</h2>
-    					<ol class="breadcrumb">
-    						<li>
-    							<a href="index.html">Home</a>
-    						</li>
-    						<li>
-    							<a>Admin</a>
-    						</li>
-    						<li class="active">
-    							<strong>Invoice</strong>
-    						</li>
-    					</ol>
-    				</div>
-    				<div class="col-lg-2">
-
-    				</div>
-    			</div>
-    			<div class="wrapper wrapper-content">
-
-    				<!-- insert content here -->
-
-
-    				<div class="row">
-    					<div class="col-lg-12">
-    						<div class="wrapper animated fadeInRight">
-    						2015&nbsp;&nbsp;
-    							<button class="btn btn-white">Nov</button>&nbsp;
-    							<button class="btn btn-white">Dec</button>
-							&nbsp;&nbsp;&nbsp;&nbsp; 2016&nbsp;&nbsp;
-    							<button class="btn btn-white">Jan</button>&nbsp;
-    							<button class="btn btn-primary">Feb</button>&nbsp;
-    							<button class="btn btn-white">Mar</button>&nbsp;
-    						</div>
-    					</div>
-    				</div>
+                        <li>
+                            <a href="ex.dashboard.html"><i class="fa fa-th-large"></i>
+                                <span class="nav-label">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ex.plan.html"><i class="fa fa-diamond"></i>
+                                <span class="nav-label">My Plan</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ex.invoice.html"><i class="fa fa-dollar"></i>
+                                <span class="nav-label">Invoice</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ex.sms.html"><i class="fa fa-cogs"></i>
+                                <span class="nav-label">SMS Service</span>
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="ex.sms1.html">Online Sending SMS</a></li>
+                                <li><a href="#">API Sending SMS</a></li>
+                                <li><a href="#">CITIC Cilent</a></li>
+                                <li><a href="#">CITIC SDK</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="ex.traffic.html"><i class="fa fa-bar-chart-o"></i>
+                                <span class="nav-label">Traffic Report</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ex.message.html"><i class="fa fa-envelope"></i>
+                                <span class="nav-label">Message Box</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ex.info.html"><i class="fa fa-user"></i>
+                                <span class="nav-label">Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
 
 
-    				<div class="row">
-    					<div class="col-lg-12">
-    						<div class="wrapper wrapper-content animated fadeInRight">
-    							<div class="ibox-content p-xl">
-    								<div class="row">
+            <div id="page-wrapper" class="gray-bg clearfix">
+                <div class="row wrapper border-bottom white-bg page-heading">
+                    <div class="col-lg-10">
+                        <h2>Invoice</h2>
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a>Admin</a>
+                            </li>
+                            <li class="active">
+                                <strong>Invoice</strong>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-2">
 
-    									<div class="text-right col-sm-12">
-    										<button class="btn btn-primary"><i class="fa fa-dollar"></i> Make A Payment</button>&nbsp;
-    										<button class="btn btn-white"><i class="fa fa-print"></i> Print</button>&nbsp;
-    										<button class="btn btn-white"><i class="fa fa-envelope"></i> Send Email</button>
-    									</div>
-    									<div class="col-sm-12">
-    										<h4>Invoice No.  <span class="text-navy">INV-00000001-00</span></h4>
+                    </div>
+                </div>
+                <div class="wrapper wrapper-content">
 
-    										<hr>
-    									</div>
-    									<div class="col-sm-6">
-
-    										<span>To:</span>
-    										<address>
-    											<strong>CITIC Telecom Limit</strong><br>
-    											93 Kwai Fo Road <br>
-    											Kwai Fong <br>
-    											Hong Kong <br> 
-    											<abbr title="Phone">P:</abbr> (123) 6844 4966
-    										</address>
-    										<p>
-    											<span><strong>Invoice Date:</strong> Marh 18, 2014</span><br>
-    											<span><strong>Due Date:</strong> March 24, 2014</span>
-    										</p>
-    									</div>
-
-    									<div class="col-sm-6  text-right">
-    										<h5>From:</h5>
-    										<address>
-    											<strong>CITIC Telecom Limit</strong><br>
-    											93 Kwai Fo Road <br>
-    											Kwai Fong <br>
-    											Hong Kong <br> 
-    											<abbr title="Phone">P:</abbr> (123) 6844 4966
-    										</address>
-    									</div>
-    								</div>
-
-    								<div class="table-responsive m-t">
-    									<table class="table invoice-table">
-    										<thead>
-    											<tr>
-    												<th>Item List</th>
-    												<th>Quantity</th>
-    												<th>Unit Price</th>
-    												<th>Tax</th>
-    												<th>Total Price</th>
-    											</tr>
-    										</thead>
-    										<tbody>
-    											<tr>
-    												<td><div><strong>SMS China</strong></div>
-    													<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-    												</td>
-    												<td>1</td>
-    												<td>$26.00</td>
-    												<td>$5.98</td>
-    												<td>$31,98</td>
-    											</tr>
-    											<tr>
-    												<td><div><strong>SMS Hong Kong</strong></div>
-    													<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    													</small>
-    												</td>
-    												<td>2</td>
-    												<td>$80.00</td>
-    												<td>$36.80</td>
-    												<td>$196.80</td>
-    											</tr>
-    											<tr>
-    												<td><div><strong>HTTPS API</strong></div>
-    													<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-    												</td>
-    												<td>3</td>
-    												<td>$420.00</td>
-    												<td>$193.20</td>
-    												<td>$1033.20</td>
-    											</tr>
+                    <!-- insert content here -->
 
 
-    											<tr>
-    												<td><div><strong>SMS Alpha OA</strong></div>
-    													<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
-    												</td>
-    												<td>3</td>
-    												<td>$420.00</td>
-    												<td>$193.20</td>
-    												<td>$1033.20</td>
-    											</tr>
-
-    										</tbody>
-    									</table>
-    								</div><!-- /table-responsive -->
-
-    								<table class="table invoice-total">
-    									<tbody>
-    										<tr>
-    											<td><strong>Sub Total :</strong></td>
-    											<td>$1026.00</td>
-    										</tr>
-    										<tr>
-    											<td><strong>TAX :</strong></td>
-    											<td>$235.98</td>
-    										</tr>
-    										<tr>
-    											<td><strong>TOTAL :</strong></td>
-    											<td>$1261.98</td>
-    										</tr>
-    									</tbody>
-    								</table>
-
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-
-    				<!-- end of content -->
-
-    			</div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="wrapper animated fadeInRight">
+                                2015&nbsp;&nbsp;
+                                <button class="btn btn-white">Nov</button>&nbsp;
+                                <button class="btn btn-white">Dec</button>
+                                &nbsp;&nbsp;&nbsp;&nbsp; 2016&nbsp;&nbsp;
+                                <button class="btn btn-white">Jan</button>&nbsp;
+                                <button class="btn btn-primary">Feb</button>&nbsp;
+                                <button class="btn btn-white">Mar</button>&nbsp;
+                            </div>
+                        </div>
+                    </div>
 
 
 
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="wrapper wrapper-content animated fadeInRight">
+                                <div class="ibox">
+                                    <div class="ibox-content p-xl">
+                                        <div class="row">
+
+                                            <div class="text-right col-sm-12">
+                                                <button class="btn btn-primary"><i class="fa fa-dollar"></i> Make A Payment</button>&nbsp;
+                                                <button class="btn btn-white"><i class="fa fa-print"></i> Print</button>&nbsp;
+                                                <button class="btn btn-white"><i class="fa fa-envelope"></i> Send Email</button>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <h4>Invoice No.  <span class="text-navy">INV-00000001-00</span></h4>
+
+                                                <hr>
+                                            </div>
+                                            <div class="col-sm-6">
+
+                                                <span>To:</span>
+                                                <address>
+                                                    <strong>CITIC Telecom Limit</strong><br>
+                                                    93 Kwai Fo Road <br>
+                                                    Kwai Fong <br>
+                                                    Hong Kong <br> 
+                                                    <abbr title="Phone">P:</abbr> (123) 6844 4966
+                                                </address>
+                                                <p>
+                                                    <span><strong>Invoice Date:</strong> Marh 18, 2014</span><br>
+                                                    <span><strong>Due Date:</strong> March 24, 2014</span>
+                                                </p>
+                                            </div>
+
+                                            <div class="col-sm-6  text-right">
+                                                <h5>From:</h5>
+                                                <address>
+                                                    <strong>CITIC Telecom Limit</strong><br>
+                                                    93 Kwai Fo Road <br>
+                                                    Kwai Fong <br>
+                                                    Hong Kong <br> 
+                                                    <abbr title="Phone">P:</abbr> (123) 6844 4966
+                                                </address>
+                                            </div>
+                                        </div>
+
+                                        <div class="table-responsive m-t">
+                                            <table class="table invoice-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Item List</th>
+                                                        <th>Quantity</th>
+                                                        <th>Unit Price</th>
+                                                        <th>Tax</th>
+                                                        <th>Total Price</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><div><strong>SMS China</strong></div>
+                                                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                                                        </td>
+                                                        <td>1</td>
+                                                        <td>$26.00</td>
+                                                        <td>$5.98</td>
+                                                        <td>$31,98</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div><strong>SMS Hong Kong</strong></div>
+                                                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                            </small>
+                                                        </td>
+                                                        <td>2</td>
+                                                        <td>$80.00</td>
+                                                        <td>$36.80</td>
+                                                        <td>$196.80</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><div><strong>HTTPS API</strong></div>
+                                                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                                                        </td>
+                                                        <td>3</td>
+                                                        <td>$420.00</td>
+                                                        <td>$193.20</td>
+                                                        <td>$1033.20</td>
+                                                    </tr>
 
 
-    			<div class="footer">
-    				<div class="pull-right">
-    					10GB of <strong>250GB</strong> Free.
-    				</div>
-    				<div>
-    					<strong>Copyright</strong> Example Company &copy; 2014-2015
-    				</div>
-    			</div>
+                                                    <tr>
+                                                        <td><div><strong>SMS Alpha OA</strong></div>
+                                                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                                                        </td>
+                                                        <td>3</td>
+                                                        <td>$420.00</td>
+                                                        <td>$193.20</td>
+                                                        <td>$1033.20</td>
+                                                    </tr>
 
-    		</div>
-    	</div>
+                                                </tbody>
+                                            </table>
+                                        </div><!-- /table-responsive -->
+
+                                        <table class="table invoice-total">
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Sub Total :</strong></td>
+                                                    <td>$1026.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>TAX :</strong></td>
+                                                    <td>$235.98</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>TOTAL :</strong></td>
+                                                    <td>$1261.98</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- end of content -->
+
+                </div>
 
 
 
-    	<!-- Mainly scripts -->
-    	<script src="js/jquery-2.1.1.js"></script>
-    	<script src="js/bootstrap.min.js"></script>
-    	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>	
-    	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    	<!-- Peity -->
-    	<script src="js/plugins/peity/jquery.peity.min.js"></script>
 
-    	<!-- Custom and plugin javascript -->
-    	<script src="js/inspinia.js"></script>
-    	<script src="js/plugins/pace/pace.min.js"></script>
+                <div class="footer">
+                    <div class="pull-right">
+                        10GB of <strong>250GB</strong> Free.
+                    </div>
+                    <div>
+                        <strong>Copyright</strong> Example Company &copy; 2014-2015
+                    </div>
+                </div>
 
-    	<!-- iCheck -->
-    	<script src="js/plugins/iCheck/icheck.min.js"></script>
+            </div>
+        </div>
 
-    	<!-- Peity -->
-    	<script src="js/demo/peity-demo.js"></script>
 
-    	<!-- Custom -->
-    	<script src="js/custom.js"></script>
+
+        <!-- Mainly scripts -->
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>	
+        <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <!-- Peity -->
+        <script src="js/plugins/peity/jquery.peity.min.js"></script>
+
+        <!-- Custom and plugin javascript -->
+        <script src="js/inspinia.js"></script>
+        <script src="js/plugins/pace/pace.min.js"></script>
+
+        <!-- iCheck -->
+        <script src="js/plugins/iCheck/icheck.min.js"></script>
+
+        <!-- Peity -->
+        <script src="js/demo/peity-demo.js"></script>
+
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
 
 
     </body>
 
-    </html>
+</html>
 
 

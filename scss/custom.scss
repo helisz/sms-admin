@@ -1,6 +1,6 @@
 /*** NAVBAR ***/
 .navbar{
-    background: $navy;
+    background: #2D3956;
     box-shadow: 0 0 6px rgba(0,0,0,0.2);
     position: fixed;
     top: 0;
@@ -24,6 +24,11 @@
         }
     }
 }
+.nav-header{
+    a{
+        color: $nav-text-color;
+    }
+}
 .nav-label{
     text-transform: uppercase;
 }
@@ -32,7 +37,7 @@
         & > li{
             & > a:hover, & > a:focus{
                 background-color: #FFF;
-                color: $nav-text-color;
+                color: $navy;
             }
             &.active{
                 border-left: 4px solid $navy;
