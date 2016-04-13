@@ -24,27 +24,30 @@
             <!-- TOPNAV -->
             <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
-                    <h4 class="nav pull-left" style="margin:0 0 0 10px">
+                    <a href="../smsportal/index.html" class="nav pull-left" style="margin:0 0 0 10px">
                         <img src="img/logo.png" alt="SMS Portal">
-                    </h4>
+                    </a>
                 </div>
-                <ul class="nav navbar-top-links navbar-left">
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
                     <li><a href="#">Product</a></li>
                     <li><a href="#">Use Cases</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Online Store</a></li>
                 </ul>
-                <ul class="nav navbar-top-links navbar-right">
+                <ul class="nav navbar-top-links navbar-right pull-right">
                     <li>
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <a href="cart.html">
+                           <i class="fa fa fa-shopping-cart"></i>Cart
+                       </a>
+                    </li>
+                    <li>
+                        <a data-toggle="dropdown" class="dropdown-toggle user-access" href="#">
                             <span style="display: inline-block; height: 20px;">
-                                <img alt="image" class="img-circle" style="margin: -10px 5px -10px 0; width: 40px; height: 40px" src="img/profile_small.jpg" />
+                               <i class="fa fa-user"></i>Hi, Chris HE
                             </span>
                         </a>
                         <ul class="topbar-drop dropdown-menu animated fadeInv m-t-xs">
-                            <li class="dropdown-menu-header"><h3>Hi, Chris</h3></li>
-                            <li class="divider"></li>
                             <li><a href="ex.info.html"><i class="fa fa-user"></i>&nbsp;&nbsp;Profile</a></li>
                             <li><a href="ex.dashboard.html"><i class="fa fa-th-large"></i>&nbsp;&nbsp;Admin Panel</a></li>
                             <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;My Cart</a></li>
@@ -52,8 +55,18 @@
                             <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Logout</a></li>
                         </ul>
                     </li>
+                    <li> <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span style="display: inline-block; height: 20px;">
+                               EN
+                            </span>
+                        </a>
+                        <ul class="topbar-drop dropdown-menu animated fadeInv m-t-xs">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">简体</a></li>
+                            <li><a href="#">繁体</a></li>
+                        </ul>
+                    </li>
                 </ul>
-
             </nav>
 
             <nav class="navbar-default navbar-static-side" role="navigation">
@@ -88,6 +101,18 @@
                             </a>
                         </li>
                         <li>
+                            <a href="cart.html"><i class="fa fa fa-shopping-cart"></i>
+                                <span class="nav-label">Cart</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="ex.info.html"><i class="fa fa-user"></i>
+                                <span class="nav-label">Profile</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
                             <a href="ex.plan.html"><i class="fa fa-diamond"></i>
                                 <span class="nav-label">My Plan</span>
                             </a>
@@ -117,11 +142,6 @@
                         <li>
                             <a href="ex.message.html"><i class="fa fa-envelope"></i>
                                 <span class="nav-label">Message Box</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="ex.info.html"><i class="fa fa-user"></i>
-                                <span class="nav-label">Profile</span>
                             </a>
                         </li>
                     </ul>

@@ -10,9 +10,9 @@
 }
 .navbar{
     ul.navbar-top-links{
-        li{
+        > li{
             padding: 10px 0;
-            a{
+            > a{
                 color: white;
                 padding: 10px 10px;
                 min-height: 40px;
@@ -49,6 +49,7 @@
                     }
                 }
             }
+
         }
     }
 }
@@ -61,6 +62,9 @@
         a i{
             width: 14px;
             display: inline-block;
+        }
+        .dropdown-menu{
+
         }
     }
 }
@@ -76,7 +80,13 @@
     }
     .ibox-content{
         border-top: 0;
+        &.active{
+            border-left: 6px solid rgba(26, 179, 148, 0.3)
+        }
     }
+}
+.well{
+    min-height: 0px;
 }
 #page-wrapper{
     margin-top: 60px;
@@ -110,7 +120,7 @@
     }
 }
 .nav hr{
-    border-color: rgba(255,255,255,0.05);
+    border-color: rgba(0,0,0,0.05);
     margin: 0;
     padding: 0;
 }

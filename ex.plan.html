@@ -24,35 +24,46 @@
             <!-- TOPNAV -->
             <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
-                    <h4 class="nav pull-left" style="margin:0 0 0 10px">
+                    <a href="index.html" class="nav pull-left" style="margin:0 0 0 10px">
                         <img src="img/logo.png" alt="SMS Portal">
-                    </h4>
+                    </a>
                 </div>
-                <ul class="nav navbar-top-links navbar-right">
-                    <li class="dropdown cart-dropdown" id="cart-empty">
-                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
-                            <i class="fa fa-shopping-cart"></i>
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Online Store</a></li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li>
+                        <a data-toggle="dropdown" class="dropdown-toggle user-access" href="#">
+                            <span style="display: inline-block; height: 20px;">
+                                <i class="fa fa-user"></i>Hi, Chris HE
+                            </span>
                         </a>
-                        <ul class="dropdown-menu dropdown-messages">
-                            <li>
-                                <div class="dropdown-messages-box">
-                                    <div class="text-center">
-                                        Your cart is empty
-                                    </div>
-                                </div>
-                            </li>
+                        <ul class="topbar-drop dropdown-menu animated fadeInv m-t-xs">
+                            <li><a href="ex.info.html"><i class="fa fa-user"></i>&nbsp;&nbsp;Profile</a></li>
+                            <li><a href="ex.dashboard.html"><i class="fa fa-th-large"></i>&nbsp;&nbsp;Admin Panel</a></li>
+                            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;My Cart</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Logout</a></li>
                         </ul>
                     </li>
-
                     <li>
-                        <a href="#">
-                            <i class="fa fa-sign-out"></i>Log out
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span style="display: inline-block; height: 20px;">
+                                EN
+                            </span>
                         </a>
+                        <ul class="topbar-drop dropdown-menu animated fadeInv m-t-xs">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">简体</a></li>
+                            <li><a href="#">繁体</a></li>
+                        </ul>
                     </li>
                 </ul>
-
             </nav>
-
 
             <nav class="navbar-default navbar-static-side" role="navigation">
                 <div class="sidebar-collapse">
@@ -128,10 +139,11 @@
 
 
 
+
             <div id="page-wrapper" class="gray-bg clearfix clearfix">
                 <div class="row wrapper border-bottom white-bg page-heading">
                     <div class="col-lg-10">
-                        <h2>Subscriptions (My Plan)</h2>
+                        <h2>My Plan</h2>
                         <ol class="breadcrumb">
                             <li>
                                 <a href="index.html">Home</a>
@@ -140,7 +152,7 @@
                                 <a>Admin</a>
                             </li>
                             <li class="active">
-                                <strong>Subscriptions (My Plan)</strong>
+                                <strong>My Plan</strong>
                             </li>
                         </ol>
                     </div>
@@ -155,8 +167,9 @@
                         <div class="row">
                             <div class="col-lg-12"> 
                                 <div class="ibox">
+
                                     <div class="ibox-content">
-                                        <h3>CHINA Direction 10000 Plan<button class="btn btn-white btn-xs pull-right">Details</button></h3>
+                                        <h3>China Direction 10000 Plan<button class="btn btn-white btn-xs pull-right detail-toggle">Details</button></h3>
                                         <p>Exp Date: 2016-12     Type: Monthly</p>
                                         <h2>65%</h2>
                                         <div class="progress progress-mini">
@@ -164,55 +177,214 @@
                                         </div>
 
                                         <div class="m-t-sm small">6511/10000</div>
-                                    </div>
-                                    <div class="ibox-content" style="border-left: 6px solid rgba(26, 179, 148, 0.3)">
-                                        <h3>HONG KONG Direction 10000 Plan</h3>
-                                        <h2>50%</h2>
-                                        <div class="progress progress-mini">
-                                            <div style="width: 78%;" class="progress-bar"></div>
+                                        <div class="detail-table" style="display: none">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Data</th>
+                                                        <th>User</th>
+                                                        <th>Value</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td><span class="line" style="display: none;">5,3,2,-1,-3,-2,2,3,5,2</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 9.375 0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125 32 9.375"></polygon><polyline fill="transparent" points="0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Samantha</td>
+                                                        <td class="text-navy"> <i class="fa fa-level-up"></i> 40% </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td><span class="line" style="display: none;">5,3,9,6,5,9,7,3,5,2</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 15 0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666 32 15"></polygon><polyline fill="transparent" points="0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Jacob</td>
+                                                        <td class="text-warning"> <i class="fa fa-level-down"></i> -20% </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td><span class="line" style="display: none;">1,6,3,9,5,9,5,3,9,6,4</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 15 0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332 32 15"></polygon><polyline fill="transparent" points="0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Damien</td>
+                                                        <td class="text-navy"> <i class="fa fa-level-up"></i> 26% </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
 
-                                        <div class="m-t-sm small">5021/10000</div>
 
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Data</th>
-                                                    <th>User</th>
-                                                    <th>Value</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td><span class="line" style="display: none;">5,3,2,-1,-3,-2,2,3,5,2</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 9.375 0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125 32 9.375"></polygon><polyline fill="transparent" points="0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
-                                                    <td>Samantha</td>
-                                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 40% </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td><span class="line" style="display: none;">5,3,9,6,5,9,7,3,5,2</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 15 0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666 32 15"></polygon><polyline fill="transparent" points="0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
-                                                    <td>Jacob</td>
-                                                    <td class="text-warning"> <i class="fa fa-level-down"></i> -20% </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td><span class="line" style="display: none;">1,6,3,9,5,9,5,3,9,6,4</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 15 0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332 32 15"></polygon><polyline fill="transparent" points="0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
-                                                    <td>Damien</td>
-                                                    <td class="text-navy"> <i class="fa fa-level-up"></i> 26% </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
                                     </div>
+
+
                                     <div class="ibox-content">
-                                        <h3>Basic SMS<button class="btn btn-white btn-xs pull-right">Details</button></h3>
-                                        <h2>94%</h2>
+                                        <h3>Japan Direction 10000 Plan<button class="btn btn-white btn-xs pull-right detail-toggle">Details</button></h3>
+                                        <h2>50%</h2>
+                                        <div class="progress progress-mini">
+                                            <div style="width: 50%;" class="progress-bar"></div>
+                                        </div>
+
+                                        <div class="m-t-sm small">5500/10000</div>
+                                        <div class="detail-table" style="display: none">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Data</th>
+                                                        <th>User</th>
+                                                        <th>Value</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td><span class="line" style="display: none;">5,3,2,-1,-3,-2,2,3,5,2</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 9.375 0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125 32 9.375"></polygon><polyline fill="transparent" points="0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Samantha</td>
+                                                        <td class="text-navy"> <i class="fa fa-level-up"></i> 40% </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td><span class="line" style="display: none;">5,3,9,6,5,9,7,3,5,2</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 15 0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666 32 15"></polygon><polyline fill="transparent" points="0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Jacob</td>
+                                                        <td class="text-warning"> <i class="fa fa-level-down"></i> -20% </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td><span class="line" style="display: none;">1,6,3,9,5,9,5,3,9,6,4</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 15 0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332 32 15"></polygon><polyline fill="transparent" points="0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Damien</td>
+                                                        <td class="text-navy"> <i class="fa fa-level-up"></i> 26% </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                    
+                                     <div class="ibox-content">
+                                        <h3>Hong Kong Unlimited  10000 Plan<button class="btn btn-white btn-xs pull-right detail-toggle">Details</button></h3>
+                                        <h2>Unlimited</h2>
+                                        <div class="progress progress-mini">
+                                            <div style="width: 100%;" class="progress-bar progress-bar-success"></div>
+                                        </div>
+
+                                        <div class="m-t-sm small">Unlimited</div>
+                                        <div class="detail-table" style="display: none">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Data</th>
+                                                        <th>User</th>
+                                                        <th>Value</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td><span class="line" style="display: none;">5,3,2,-1,-3,-2,2,3,5,2</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 9.375 0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125 32 9.375"></polygon><polyline fill="transparent" points="0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Samantha</td>
+                                                        <td class="text-navy"> <i class="fa fa-level-up"></i> 40% </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td><span class="line" style="display: none;">5,3,9,6,5,9,7,3,5,2</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 15 0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666 32 15"></polygon><polyline fill="transparent" points="0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Jacob</td>
+                                                        <td class="text-warning"> <i class="fa fa-level-down"></i> -20% </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td><span class="line" style="display: none;">1,6,3,9,5,9,5,3,9,6,4</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 15 0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332 32 15"></polygon><polyline fill="transparent" points="0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Damien</td>
+                                                        <td class="text-navy"> <i class="fa fa-level-up"></i> 26% </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="ibox-content">
+                                        <h3>USA Direction 10000 Plan<button class="btn btn-white btn-xs pull-right detail-toggle">Details</button></h3>
+                                        <h2>89%</h2>
                                         <div class="progress progress-mini">
                                             <div style="width: 94%;" class="progress-bar progress-bar-danger"></div>
                                         </div>
 
-                                        <div class="m-t-sm small">9451/10000</div>
+                                        <div class="detail-table" style="display: none">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Data</th>
+                                                        <th>User</th>
+                                                        <th>Value</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td><span class="line" style="display: none;">5,3,2,-1,-3,-2,2,3,5,2</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 9.375 0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125 32 9.375"></polygon><polyline fill="transparent" points="0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Samantha</td>
+                                                        <td class="text-navy"> <i class="fa fa-level-up"></i> 40% </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td><span class="line" style="display: none;">5,3,9,6,5,9,7,3,5,2</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 15 0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666 32 15"></polygon><polyline fill="transparent" points="0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Jacob</td>
+                                                        <td class="text-warning"> <i class="fa fa-level-down"></i> -20% </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td><span class="line" style="display: none;">1,6,3,9,5,9,5,3,9,6,4</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 15 0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332 32 15"></polygon><polyline fill="transparent" points="0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Damien</td>
+                                                        <td class="text-navy"> <i class="fa fa-level-up"></i> 26% </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="m-t-sm small">8951/10000</div>
+                                    </div>
+                                    
+                                    <div class="ibox-content">
+                                        <h3>Taiwan Direction 5000 Plan<button class="btn btn-white btn-xs pull-right detail-toggle">Details</button></h3>
+                                        <p>Exp Date: 2016-12     Type: Monthly</p>
+                                        <h2>12%</h2>
+                                        <div class="progress progress-mini">
+                                            <div style="width: 12%;" class="progress-bar"></div>
+                                        </div>
+
+                                        <div class="m-t-sm small">600/5000</div>
+                                        <div class="detail-table" style="display: none">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Data</th>
+                                                        <th>User</th>
+                                                        <th>Value</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td><span class="line" style="display: none;">5,3,2,-1,-3,-2,2,3,5,2</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 9.375 0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125 32 9.375"></polygon><polyline fill="transparent" points="0 0.5 3.5555555555555554 4.25 7.111111111111111 6.125 10.666666666666666 11.75 14.222222222222221 15.5 17.77777777777778 13.625 21.333333333333332 6.125 24.888888888888886 4.25 28.444444444444443 0.5 32 6.125" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Samantha</td>
+                                                        <td class="text-navy"> <i class="fa fa-level-up"></i> 40% </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td><span class="line" style="display: none;">5,3,9,6,5,9,7,3,5,2</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 15 0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666 32 15"></polygon><polyline fill="transparent" points="0 7.166666666666666 3.5555555555555554 10.5 7.111111111111111 0.5 10.666666666666666 5.5 14.222222222222221 7.166666666666666 17.77777777777778 0.5 21.333333333333332 3.833333333333332 24.888888888888886 10.5 28.444444444444443 7.166666666666666 32 12.166666666666666" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Jacob</td>
+                                                        <td class="text-warning"> <i class="fa fa-level-down"></i> -20% </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td><span class="line" style="display: none;">1,6,3,9,5,9,5,3,9,6,4</span><svg class="peity" height="16" width="32"><polygon fill="#1ab394" points="0 15 0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332 32 15"></polygon><polyline fill="transparent" points="0 13.833333333333334 3.2 5.5 6.4 10.5 9.600000000000001 0.5 12.8 7.166666666666666 16 0.5 19.200000000000003 7.166666666666666 22.400000000000002 10.5 25.6 0.5 28.8 5.5 32 8.833333333333332" stroke="#169c81" stroke-width="1" stroke-linecap="square"></polyline></svg></td>
+                                                        <td>Damien</td>
+                                                        <td class="text-navy"> <i class="fa fa-level-up"></i> 26% </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>

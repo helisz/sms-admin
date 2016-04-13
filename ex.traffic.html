@@ -1,60 +1,71 @@
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
     <head>
 
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    	<title>Traffic Report</title>
+        <title>Traffic Report</title>
 
-    	<link href="css/bootstrap.min.css" rel="stylesheet">
-    	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    	<link href="css/plugins/iCheck/custom.css" rel="stylesheet">
-    	<link href="css/animate.css" rel="stylesheet">
-    	<link href="css/style.css" rel="stylesheet">
-    	<link href="css/product.css" rel="stylesheet">
-    	<link href="css/custom.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+        <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/product.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
 
     </head>
 
     <body>
 
-    	<div id="wrapper">
-    		<!-- TOPNAV -->
-    		<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-    			<div class="navbar-header">
-                    <h4 class="nav pull-left" style="margin:0 0 0 10px">
+        <div id="wrapper">
+           <!-- TOPNAV -->
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a href="index.html" class="nav pull-left" style="margin:0 0 0 10px">
                         <img src="img/logo.png" alt="SMS Portal">
-                    </h4>
+                    </a>
                 </div>
-    			<ul class="nav navbar-top-links navbar-right">
-    				<li class="dropdown cart-dropdown" id="cart-empty">
-    					<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
-    						<i class="fa fa-shopping-cart"></i>
-    					</a>
-    					<ul class="dropdown-menu dropdown-messages">
-    						<li>
-    							<div class="dropdown-messages-box">
-    								<div class="text-center">
-    									Your cart is empty
-    								</div>
-    							</div>
-    						</li>
-    					</ul>
-    				</li>
-    				
-    				<li>
-    					<a href="#">
-    						<i class="fa fa-sign-out"></i>Log out
-    					</a>
-    				</li>
-    			</ul>
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Online Store</a></li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li>
+                        <a data-toggle="dropdown" class="dropdown-toggle user-access" href="#">
+                            <span style="display: inline-block; height: 20px;">
+                               <i class="fa fa-user"></i>Hi, Chris HE
+                            </span>
+                        </a>
+                        <ul class="topbar-drop dropdown-menu animated fadeInv m-t-xs">
+                            <li><a href="ex.info.html"><i class="fa fa-user"></i>&nbsp;&nbsp;Profile</a></li>
+                            <li><a href="ex.dashboard.html"><i class="fa fa-th-large"></i>&nbsp;&nbsp;Admin Panel</a></li>
+                            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;My Cart</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Logout</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span style="display: inline-block; height: 20px;">
+                               EN
+                            </span>
+                        </a>
+                        <ul class="topbar-drop dropdown-menu animated fadeInv m-t-xs">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">简体</a></li>
+                            <li><a href="#">繁体</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
 
-    		</nav>
-
-    		
-    		            <nav class="navbar-default navbar-static-side" role="navigation">
+            <nav class="navbar-default navbar-static-side" role="navigation">
                 <div class="sidebar-collapse">
                     <ul class="nav" id="side-menu">
                         <li class="nav-header">
@@ -127,151 +138,151 @@
             </nav>
 
 
-          <div id="page-wrapper" class="gray-bg clearfix clearfix">
-             <div class="row wrapper border-bottom white-bg page-heading">
-                <div class="col-lg-10">
-                   <h2>Traffic Report</h2>
-                   <ol class="breadcrumb">
-                      <li>
-                         <a href="index.html">Home</a>
-                     </li>
-                     <li>
-                         <a>Admin</a>
-                     </li>
-                     <li class="active">
-                         <strong>Traffic Report</strong>
-                     </li>
-                 </ol>
-             </div>
-             <div class="col-lg-2">
+            <div id="page-wrapper" class="gray-bg clearfix clearfix">
+                <div class="row wrapper border-bottom white-bg page-heading">
+                    <div class="col-lg-10">
+                        <h2>Traffic Report</h2>
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a>Admin</a>
+                            </li>
+                            <li class="active">
+                                <strong>Traffic Report</strong>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-2">
 
-             </div>
-         </div>
+                    </div>
+                </div>
 
 
 
-         <div class="wrapper wrapper-content animated fadeInRight">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Line Chart Example
-                                <small>With custom colors.</small>
-                            </h5>
-                            <div ibox-tools=""></div>
+                <div class="wrapper wrapper-content animated fadeInRight">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>Line Chart Example
+                                        <small>With custom colors.</small>
+                                    </h5>
+                                    <div ibox-tools=""></div>
+                                </div>
+                                <div class="ibox-content">
+                                    <div>
+                                        <canvas id="lineChart" height="292" width="627" style="width: 627px; height: 292px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ibox-content">
-                            <div>
-                                <canvas id="lineChart" height="292" width="627" style="width: 627px; height: 292px;"></canvas>
+                        <div class="col-lg-6">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>Bar Chart Example</h5>
+                                    <div ibox-tools=""></div>
+                                </div>
+                                <div class="ibox-content">
+                                    <div>
+                                        <canvas id="barChart" height="292" width="627" style="width: 627px; height: 292px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>Polar Area</h5>
+
+                                    <div ibox-tools=""></div>
+                                </div>
+                                <div class="ibox-content">
+                                    <div class="text-center">
+                                        <canvas id="polarChart" height="292" width="627" style="width: 627px; height: 292px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>Pie </h5>
+
+                                    <div ibox-tools=""></div>
+                                </div>
+                                <div class="ibox-content">
+                                    <div>
+                                        <canvas id="doughnutChart" height="292" width="627" style="width: 627px; height: 292px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>Radar Chart Example</h5>
+                                    <div ibox-tools=""></div>
+                                </div>
+                                <div class="ibox-content">
+                                    <div>
+                                        <canvas id="radarChart" height="313" width="627" style="width: 627px; height: 313px;"></canvas>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Bar Chart Example</h5>
-                            <div ibox-tools=""></div>
-                        </div>
-                        <div class="ibox-content">
-                            <div>
-                                <canvas id="barChart" height="292" width="627" style="width: 627px; height: 292px;"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Polar Area</h5>
 
-                            <div ibox-tools=""></div>
-                        </div>
-                        <div class="ibox-content">
-                            <div class="text-center">
-                                <canvas id="polarChart" height="292" width="627" style="width: 627px; height: 292px;"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Pie </h5>
 
-                            <div ibox-tools=""></div>
-                        </div>
-                        <div class="ibox-content">
-                            <div>
-                                <canvas id="doughnutChart" height="292" width="627" style="width: 627px; height: 292px;"></canvas>
-                            </div>
-                        </div>
+
+                <div class="footer">
+                    <div class="pull-right">
+                        10GB of <strong>250GB</strong> Free.
+                    </div>
+                    <div>
+                        <strong>Copyright</strong> Example Company &copy; 2014-2015
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>Radar Chart Example</h5>
-                            <div ibox-tools=""></div>
-                        </div>
-                        <div class="ibox-content">
-                            <div>
-                                <canvas id="radarChart" height="313" width="627" style="width: 627px; height: 313px;"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
 
 
 
-        <div class="footer">
-         <div class="pull-right">
-          10GB of <strong>250GB</strong> Free.
-      </div>
-      <div>
-          <strong>Copyright</strong> Example Company &copy; 2014-2015
-      </div>
-  </div>
+        <!-- Mainly scripts -->
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>	
+        <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-</div>
-</div>
+        <!-- Peity -->
+        <script src="js/plugins/peity/jquery.peity.min.js"></script>
 
+        <!-- Custom and plugin javascript -->
+        <script src="js/inspinia.js"></script>
+        <script src="js/plugins/pace/pace.min.js"></script>
 
+        <!-- iCheck -->
+        <script src="js/plugins/iCheck/icheck.min.js"></script>
 
-<!-- Mainly scripts -->
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>	
-<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        <!-- Peity -->
+        <script src="js/demo/peity-demo.js"></script>
 
-<!-- Peity -->
-<script src="js/plugins/peity/jquery.peity.min.js"></script>
+        <!-- ChartJS-->
+        <script src="js/plugins/chartJs/Chart.min.js"></script>
+        <script src="js/demo/chartjs-demo.js"></script>
 
-<!-- Custom and plugin javascript -->
-<script src="js/inspinia.js"></script>
-<script src="js/plugins/pace/pace.min.js"></script>
-
-<!-- iCheck -->
-<script src="js/plugins/iCheck/icheck.min.js"></script>
-
-<!-- Peity -->
-<script src="js/demo/peity-demo.js"></script>
-
-<!-- ChartJS-->
-<script src="js/plugins/chartJs/Chart.min.js"></script>
-<script src="js/demo/chartjs-demo.js"></script>
-
-<!-- Custom -->
-<script src="js/custom.js"></script>
+        <!-- Custom -->
+        <script src="js/custom.js"></script>
 
 
-</body>
+    </body>
 
 </html>
 

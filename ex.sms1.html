@@ -22,38 +22,49 @@
     <body>
 
         <div id="wrapper">
-            <!-- TOPNAV -->
+  <!-- TOPNAV -->
             <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
-                    <h4 class="nav pull-left" style="margin:0 0 0 10px">
+                    <a href="index.html" class="nav pull-left" style="margin:0 0 0 10px">
                         <img src="img/logo.png" alt="SMS Portal">
-                    </h4>
+                    </a>
                 </div>
-                <ul class="nav navbar-top-links navbar-right">
-                    <li class="dropdown cart-dropdown" id="cart-empty">
-                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
-                            <i class="fa fa-shopping-cart"></i>
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Online Store</a></li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li>
+                        <a data-toggle="dropdown" class="dropdown-toggle user-access" href="#">
+                            <span style="display: inline-block; height: 20px;">
+                               <i class="fa fa-user"></i>Hi, Chris HE
+                            </span>
                         </a>
-                        <ul class="dropdown-menu dropdown-messages">
-                            <li>
-                                <div class="dropdown-messages-box">
-                                    <div class="text-center">
-                                        Your cart is empty
-                                    </div>
-                                </div>
-                            </li>
+                        <ul class="topbar-drop dropdown-menu animated fadeInv m-t-xs">
+                            <li><a href="ex.info.html"><i class="fa fa-user"></i>&nbsp;&nbsp;Profile</a></li>
+                            <li><a href="ex.dashboard.html"><i class="fa fa-th-large"></i>&nbsp;&nbsp;Admin Panel</a></li>
+                            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;My Cart</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="fa fa-power-off"></i>&nbsp;&nbsp;Logout</a></li>
                         </ul>
                     </li>
-
                     <li>
-                        <a href="#">
-                            <i class="fa fa-sign-out"></i>Log out
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span style="display: inline-block; height: 20px;">
+                               EN
+                            </span>
                         </a>
+                        <ul class="topbar-drop dropdown-menu animated fadeInv m-t-xs">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">简体</a></li>
+                            <li><a href="#">繁体</a></li>
+                        </ul>
                     </li>
                 </ul>
-
             </nav>
-
 
             <nav class="navbar-default navbar-static-side" role="navigation">
                 <div class="sidebar-collapse">
@@ -160,16 +171,14 @@
                         <div class="col-sm-12">
                             <div class="ibox">
                                 <div class="ibox-content">
-                                    <form action="#" class="form-horizontal m-t-md">
+                                    <form id="smsForm" action="#" class="form-horizontal m-t-md">
 
                                         <div class="form-group">
                                             <label class="col-sm-2 col-md-3 control-label">SMS Destination No. :</label>
                                             <div class="col-sm-10 col-md-5">
-                                                <input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Please enter the phone number">
+                                                <input id="smsDes" type="tel" class="form-control" placeholder="Please enter the phone number">
                                                 <span class="help-block"><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </small></span>
-                                            </div>
-                                            <div class="animated fadeInRight col-sm-10 col-sm-push-2 col-md-4 col-xs-push-0 col-md-push-0 col-lg-push-0">
-                                                <div class="well">
+                                                <div id="smsDesWell" class="well" style="display:none">
                                                     <p><strong>Select Your Plan:</strong></p>
                                                     <select class="form-control m-b" name="account">
                                                         <option>Select One</option>
@@ -180,7 +189,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group target-time">
                                             <label class="col-sm-2 col-md-3 control-label">SMS Send Time:</label>
                                             <div class="col-sm-10 col-md-5">
                                                 <div>
@@ -192,27 +201,24 @@
                                                     <label> 
                                                         <input type="radio" value="sms2" id="optionsRadios2" name="sendTime">Target Time 
                                                     </label>
+                                                    <div id="smsTarWell" class="well" style="display:none">
+                                                        <p><strong>Select Your Target Time:</strong></p>
+                                                        <div id="time-container">
+                                                            <div class="input-group date">
+                                                                <input type="text" class="form-control"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div>
                                                     <label> 
                                                         <input type="radio" value="sms3" id="optionsRadios3" name="sendTime">Schedule 
                                                     </label>
-                                                </div>
-                                            </div>
-                                            <div class="animated fadeInRight col-sm-10 col-sm-push-2 col-md-4 col-xs-push-0 col-md-push-0 col-lg-push-0">
-                                                <div class="well">
-                                                    <p><strong>Select Your Target Time:</strong></p>
-                                                    <div id="time-container">
-                                                        <div class="input-group date">
-                                                            <input type="text" class="form-control"><span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                                        </div>
+                                                    <div id="smsScheWell" class="well" style="display:none">
+                                                        <p><strong>Confirm Schedule Rules</strong></p>
+                                                        <p><input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Please enter the phone number"></p>
+                                                        <div class="text-right"><button class="btn btn-primary">Confirm</button></div>
                                                     </div>
-                                                </div>
-
-                                                <div class="well">
-                                                    <p><strong>Confirm Schedule Rules</strong></p>
-                                                    <p><input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Please enter the phone number"></p>
-                                                    <div class="text-right"><button class="btn btn-primary">Confirm</button></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -221,21 +227,20 @@
                                             <div class="col-sm-10 col-md-5">
                                                 <div>
                                                     <label> 
-                                                        <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios">Numeric OA
+                                                        <input type="radio" checked="" value="send1" id="optionsRadios1" name="optionsRadios">Numeric OA
                                                     </label>
                                                 </div>
                                                 <div>
                                                     <label> 
-                                                        <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios">Alpha OA
+                                                        <input type="radio" value="send2" id="send2" name="optionsRadios">Alpha OA
                                                     </label>
+
+                                                    <div id="smsAlphaWell" class="well" style="display:none">
+                                                        <p><strong>Please enter text for SMS sender</strong></p>
+                                                        <input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Please enter the phone number">
+                                                    </div>
                                                 </div>
                                                 <span class="help-block"><small>Praesent sapien massa</small></span>
-                                            </div>
-                                            <div class="animated fadeInRight col-sm-10 col-sm-push-2 col-md-4 col-xs-push-0 col-md-push-0 col-lg-push-0">
-                                                <div class="well">
-                                                    <p><strong>Please enter text for SMS sender</strong></p>
-                                                    <input type="text" class="form-control" data-mask="999-99-999-9999-9" placeholder="Please enter the phone number">
-                                                </div>
                                             </div>
 
                                         </div>
@@ -288,13 +293,6 @@
 
         <!-- iCheck -->
         <script src="js/plugins/iCheck/icheck.min.js"></script>
-
-        <!-- Peity -->
-        <script src="js/demo/peity-demo.js"></script>
-
-        <!-- ChartJS-->
-        <script src="js/plugins/chartJs/Chart.min.js"></script>
-        <script src="js/demo/chartjs-demo.js"></script>
 
         <!-- Custom -->
         <script src="js/custom.js"></script>

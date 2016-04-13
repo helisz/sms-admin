@@ -4592,14 +4592,14 @@ body.skin-3 {
   right: 0;
   width: 100%; }
 
-.navbar ul.navbar-top-links li {
+.navbar ul.navbar-top-links > li {
   padding: 10px 0; }
-  .navbar ul.navbar-top-links li a {
+  .navbar ul.navbar-top-links > li > a {
     color: white;
     padding: 10px 10px;
     min-height: 40px;
     border-radius: 5px; }
-    .navbar ul.navbar-top-links li a:hover {
+    .navbar ul.navbar-top-links > li > a:hover {
       background: #4B5879; }
 
 .nav-header a {
@@ -4636,6 +4636,11 @@ body.skin-3 {
     border-bottom: 1px solid #e7eaec; }
   .ibox .ibox-content {
     border-top: 0; }
+    .ibox .ibox-content.active {
+      border-left: 6px solid rgba(26, 179, 148, 0.3); }
+
+.well {
+  min-height: 0px; }
 
 #page-wrapper {
   margin-top: 60px; }
@@ -4667,7 +4672,7 @@ body.skin-3 {
   padding: 5px 0; }
 
 .nav hr {
-  border-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(0, 0, 0, 0.05);
   margin: 0;
   padding: 0; }
 
